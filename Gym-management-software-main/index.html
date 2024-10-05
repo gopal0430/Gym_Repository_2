@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="script" href="/Gym-management-software-main/js/my.js"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../Gym-management-software-main/js/my.js"></script>
+    <title>Loading Title on Page Load</title>
+    <!-- <title>Mr.FitnessGYM</title> -->
+  </head>
+  <body>
+    <!-- Placeholder for the title -->
+    <h1 id="pageTitle">GYM</h1>
+
+
+    <h2 id="pageName">Default Page Name</h2>
+    <!-- <img id="logo" src="" alt="Logo" style="display: none;">
+    <img id="headerImage" src="" alt="Header Image" style="display: none;"> -->
+    <!-- Header Section -->
+    <header>
+      <a href="#home" class="logo">Mr.<span>Fitness</span></a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Review</a></li>
+      </ul>
+
+      <div class="top-btn">
+        <a href="/ls_page.html" class="nav-btn">Join Us</a>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Build Your Own</h3>
+        <h1>Dream Physique</h1>
+        <h3><span class="multiple-text">Body-Building</span></h3>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non incidunt
+          aliquid sequi, possimus quidem distinctio doloremque quis consectetur
+          officia aliquam voluptatum voluptatibus ipsa assumenda, molestiae
+          ducimus fugiat consequatur! Dolorem, quas.
+        </p>
+
+        <a href="/ls_page.html" class="btn">Join Us</a>
+      </div>
+      <div class="home-img">
+        <img
+          src="/Gym-management-software-main/img/victor-freitas-WvDYdXDzkhs-unsplash.png"
+          alt="home-img">
+      </div>
+    </section>
+    <script>
+      let menu = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("active");
+      };
+      window.onscroll = () => {
+        menu.classList.remove("bx-x");
+        navbar.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "pageTitle": "My Awesome Webpage",
+  "pageName": "Welcome to My Site",
+  "logo": "path/to/logo.png",
+  "image": "path/to/header-image.jpg"
+}
